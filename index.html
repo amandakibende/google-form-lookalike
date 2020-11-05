@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Coding_form</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1 id="title"></h1>
+    <p id="description">
+      Thank you taking the time sharing your journey in coding.
+    </p>
+    <form
+      action="mailto:contactproamanda@gmail.com"
+      method="post"
+      enctype="multipart/form-data"
+      id="survey-form"
+    >
+      <label for="name" id="name-label">Name</label>
+      <input type="text" name="name" placeholder="Agretsuko" />
+
+      <label for="email" id="email-label">Email</label>
+      <input
+        type="text"
+        name="email"
+        placeholder="journeytocode@myway.com"
+        id="email"
+        required
+      />
+
+      <label for="age" id="number-label"
+        >How old where you when you start coding?</label
+      >
+      <input
+        type="number"
+        name="age"
+        id="number"
+        min="8"
+        max="100"
+        placeholder="35"
+        required
+      />
+
+      <label for="education">How did you learn?</label>
+      <select name="education" id="dropdown">
+        <option value="self-taught">self-taught</option>
+        <option value="CS degree">CS degree</option>
+        <option value="Bootcamp">Bootcamp</option>
+        <option value="Mentor">Mentor</option>
+        <option value="Mix">A mix</option>
+      </select>
+
+      <p>Have you a background in a science field?</p>
+      <input type="radio" name="attribute" id="radio" />
+      <label for="yes">Yes</label>
+      <input type="radio" name="attribute" id="radio" />
+      <label for="no">No</label>
+
+      <p>What was your challenges?</p>
+      <input type="checkbox" name="attribute" id="box" value="attribute" />
+      <label for="frustration">Frustration</label>
+      <input type="checkbox" name="attribute" id="box" value="attribute" />
+      <label for="Understand">Understand</label>
+      <input type="checkbox" name="attribute" id="box" value="attribute" />
+      <label for="Time">Having enough time</label>
+      <input type="checkbox" name="attribute" id="box" value="attribute" />
+      <label for="imposter">Imposter syndrom</label>
+      <input type="checkbox" name="attribute" id="box" value="attribute" />
+      <label for="comparision">Comparison</label>
+
+      <label for="story">Tell me your story:</label>
+      <textarea id="story" name="story" rows="5" cols="33">
+    It was january the third, while dinkink my cofee...
+    </textarea
+      >
+
+      <button id="submit">Submit</button>
+    </form>
+  </body>
+</html>
