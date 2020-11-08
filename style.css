@@ -10,8 +10,8 @@ body {
 .form-container {
   margin: auto;
   background-color: #ffffff;
-  padding: 60px;
-  width: 550px;
+  padding: 50px;
+  width: 500px;
   box-shadow: 1px 3px 3px grey;
   text-align: left;
 }
@@ -21,14 +21,15 @@ h1 {
   font-weight: bold;
 }
 
-input,
+#email,
+#number,
+#name,
 select {
   width: 100%;
   padding: 12px 20px;
   margin: 8px;
   display: inline-block;
   border: none;
-  border-bottom: 1px solid #c4b6b6;
 }
 
 label {
@@ -63,4 +64,22 @@ button {
 button:hover {
   cursor: pointer;
   background-color: blueviolet;
+}
+
+input {
+  margin: 20px;
+}
+
+/*responsive*/
+
+@media screen and (max-width: 600px) {
+  label,
+  input .form-container {
+    width: 50%;
+    margin-top: 0;
+    overflow: auto;
+  }
+  textarea {
+    width: 50%;
+  }
 }

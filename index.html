@@ -19,11 +19,11 @@
         id="survey-form"
       >
         <label for="name" id="name-label">Name</label>
-        <input type="text" name="name" placeholder="Name" required />
+        <input type="text" name="name" id="name" placeholder="Name" required />
 
         <label for="email" id="email-label">Email</label>
         <input
-          type="text"
+          type="email"
           name="email"
           placeholder="journeytocode@myway.com"
           id="email"
@@ -52,28 +52,35 @@
           <option value="Mix">A mix</option>
         </select>
 
-        <p>Have you a background in a science field?</p>
-        <input type="radio" name="attribute" id="radio" />
+        <label>Have you a background in a science field?</label>
+
+        <input type="radio" name="attribute" id="radio" value="attribute" />
         <label for="yes">Yes</label>
-        <input type="radio" name="attribute" id="radio" />
+
+        <input type="radio" name="attribute" id="radio" value="attribute" />
         <label for="no">No</label>
 
-        <p>What was your challenges?</p>
+        <label>What was your challenges?</label>
 
         <input type="checkbox" name="attribute" id="box" value="attribute" />
-        <label for="frustration">Frustration</label>
+
+        <label for="Frustation" id="label-box">Frustation</label>
+
         <input type="checkbox" name="attribute" id="box" value="attribute" />
-        <label for="Understand">Understand concepts</label>
+        <label for="Understand" id="label-box">Understand concepts</label>
+
         <input type="checkbox" name="attribute" id="box" value="attribute" />
-        <label for="Time">Having enough time</label>
+        <label for="Time" id="label-box">Having enough time</label>
+
         <input type="checkbox" name="attribute" id="box" value="attribute" />
-        <label for="imposter">Imposter syndrom</label>
+        <label for="imposter" id="label-box">Imposter syndrom</label>
+
         <input type="checkbox" name="attribute" id="box" value="attribute" />
-        <label for="comparision">Comparison</label>
+        <label for="comparision" id="label-box">Comparison</label>
 
         <label for="story">Tell me your story:</label>
         <textarea id="story" name="story" rows="5" cols="33">
-    It was january the third, while dinkink my cofee...
+    Write here..
     </textarea
         >
 
